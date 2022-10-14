@@ -1,0 +1,25 @@
+body {
+  width: 80%;
+}
+
+header {
+
+}
+
+h1 {
+  font-family: 'Courgette';
+}
+
+.banner {
+  background-image: url(../img/hr-img.png);
+  background-repeat: repeat;
+  height: 10px;
+}
+
+#ingredients {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+
+
