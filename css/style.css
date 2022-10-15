@@ -134,4 +134,33 @@ h1 {
 
 #author {
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 4rem;
+  align-items: center;
+}
+
+#vanessa {
+  display: flex;
+  flex-direction: column;
+}
+
+#vanessa p {
+  font-size: 12px;
+  padding-top: 5px;
+}
+
+button {
+  background-color: rgb(169, 102, 102);
+  color: white;
+  border: none;
+  font-size: 10px;
+}
+
+#left-line {
+  
+}
+
+#right-line {
+
 }
