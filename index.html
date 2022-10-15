@@ -13,41 +13,20 @@
 </head>
 <body>
 
-<!-- LAYOUT:
-
-Header: fork/knife pic, 'Delicious' text, icon pics in a row w/ wifi and mail separated on the right.
-
-banner: hr-img.png repeated across the screen
-
-text: chocolate pizza with date ----- print img on the right
-
-pic: chocolate pizza
-
-text: fig swirl instructions
-
-text: ice cream instructions
-
-img/text: ingredients on top of lined paper img
-
-banner: hr-img.png repeated across the screen
-
-footer: pic of Vanessa, name/bio, share recipe button
-
-sub-footer: fork/knife pic with a line on both sides to ends of page, then page info
-
--->
-
     <header>
 
         <!-- left side of header -->
-        <div>
-            <img src="img/logo.png" alt="fork-and-knife-logo">
-            <h1>Delicious</h1>
-            <p>THE BEST FOOD BLOG ON THE WEB.</p>
+        
+        <div id="left-header">
+            <img id="fork-and-knife" src="img/logo.png" alt="fork-and-knife-logo">
+            <div id="delicious">
+                <h1>Delicious</h1>
+                <p>THE BEST FOOD BLOG ON THE WEB.</p>
+            </div>
         </div>
 
         <!-- right side of header -->
-        <nav id="social-links">
+        <nav id="right-header">
             <ul id="socials">
                 <li><img src="img/fb-icon.png" alt="fb logo"></li>
                 <li><img src="img/twit-icon.png" alt="Twitter logo"></li>
@@ -55,9 +34,7 @@ sub-footer: fork/knife pic with a line on both sides to ends of page, then page 
                 <li><img src="img/insta-icon.png" alt="IG logo"></li>
                 <li><img src="img/flic-icon.png" alt="Flicker logo"></li>
                 <li><img src="img/pint-icon.png" alt="Pinterest logo"></li>
-            </ul>
-            <ul id="wifi">
-                <li><img src="img/rss-icon.png" alt="wifi logo"></li>
+                <li id="wifi"><img src="img/rss-icon.png" alt="wifi logo"></li>
                 <li><img src="img/mail-icon.png" alt="Email logo"></li>
             </ul>
         </nav>
@@ -70,8 +47,8 @@ sub-footer: fork/knife pic with a line on both sides to ends of page, then page 
         </div>
 
         <!-- recipe header -->
-        <section>
-            <div id="chocolate-pizza">
+        <section id="recipe-header">
+            <div id="recipe-name">
                 <h2>Chocolate Pizza</h2>
                 <p>POSTED ON 15 DEC 2013 / DESSERTS</p>
             </div>
@@ -86,31 +63,31 @@ sub-footer: fork/knife pic with a line on both sides to ends of page, then page 
 
         <!-- recipe instructions -->
         <article>
-            <p>
+            <p class="instructions">
                 For the fig-swirl: Melt butter over medium heat in a saucepan. Add brown sugar and stir to dissolve. Halve all of the figs and toss in the saucepan with water and lemon juice. Cook over medium heat, stirring frequently, until you have a chunky-jammy mixture. Add salt with one or two stirs, set aside and let cool completely.
             </p>
-            <p>
+            <p class="instructions">
                 Ice cream: In a small pot over medium heat, combine milk, and granulated sugar until sugar is completely dissolved and the milk is just barely lukewarm. Whisk in the egg yolks. Set mixture in the fridge and wait until the fig mixture is cooled. 
             </p>
-            <p>
+            <p class="instructions">
                 Using an ice cream machine, pour liquids into the frozen basin and process according to manufacturer instructions, i.e., let spin and thicken for 20 minutes before adding mascarpone, fig jam mixture, and the nuts. Continue to process for +/- 10 minutes. Pour semi-frozen mixture into a pyrex dish or glass tupperware. Freeze for at least two hours before serving.
             </p>
         </article>
         
         <div id="ingredients">
-            <ul>
-                <li>1 1/2 cups milk</li>
-                <li>1/2 cup mascarpone</li>
-                <li>1/2 tsp pink salt</li>
-                <li>1 lb black mission figs</li>
-                <li>1/2 cup brown sugar</li>
-                <li>2-4 tbsp water</li>
-                <li>1 1/2 cups heavy cream</li>
-                <li>1/3 granulated sugar</li>
-                <li>2 egg yolks</li>
-                <li>1 lemon, juiced</li>
-                <li>2 tbsp butter</li>
-                <li>1 cup honey roasted pecans</li>
+            <ul id="ingredient-list">
+                <li><input type="checkbox">1 1/2 cups milk</li>
+                <li><input type="checkbox">1/2 cup mascarpone</li>
+                <li><input type="checkbox">1/2 tsp pink salt</li>
+                <li><input type="checkbox">1 lb black mission figs</li>
+                <li><input type="checkbox">1/2 cup brown sugar</li>
+                <li><input type="checkbox">2-4 tbsp water</li>
+                <li><input type="checkbox">1 1/2 cups heavy cream</li>
+                <li><input type="checkbox">1/3 granulated sugar</li>
+                <li><input type="checkbox">2 egg yolks</li>
+                <li><input type="checkbox">1 lemon, juiced</li>
+                <li><input type="checkbox">2 tbsp butter</li>
+                <li><input type="checkbox">1 cup honey roasted pecans, roughly chopped</li>
             </ul>
         </div>
 
@@ -123,10 +100,19 @@ sub-footer: fork/knife pic with a line on both sides to ends of page, then page 
                 <img src="img/van-pic.png" alt="picture of the author">
                 <h3>Vanessa Stevenson</h3>
                 <p>Food enthusiast, photography fan. Add a pinch of raw foodism and that's pretty much who I am.</p>
+                <button>SHARE RECIPE</button>
             </nav>
         </section>
 
     </main>
+
+    <footer>
+        <hr>
+        <img src="img/small-logo.png" alt="small fork and knife icon">
+        <hr>
+        <p>Delicious &copy 2013 • All Rights Reserved.</p>
+        <p>Proudly published with Ghost</p>
+    </footer>
 
 <script src="js/app.js"></script>
 </body>
